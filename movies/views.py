@@ -104,7 +104,7 @@ class AllReviews(APIView):
 
 class DeleteReview(APIView):
 
-    # permission_classes = [ReviewPermission]
+    permission_classes = [ReviewPermission]
 
     def delete(self, request, review_id):
         try:
